@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="jukeapp_primary">#F44336</color>
+	<color name="jukeapp_primary_less_dark">#D32F2F</color>
+	<color name="jukeapp_primary_dark">#B71C1C</color>
+	<color name="jukeapp_accent">#C51162</color>
+	<color name="loading_background">@color/jukeapp_primary_dark</color>
+
+	<color name="white_primary">#d6ffffff</color>
+	<color name="white_secondary">#89ffffff</color>
+	<color name="black_primary">#c6000000</color>
+	<color name="black_secondary">#89000000</color>
+
+	<color name="vector_foreground_color">#ffffff</color>
+	<integer name="loading_anim_time">900</integer>
+
+	<style name="JukeAppTheme" parent="android:Theme.Material.Light.NoActionBar">
+    	<item name="android:colorPrimary">@color/jukeapp_primary</item>
+	    <item name="android:colorPrimaryDark">@color/jukeapp_primary_dark</item>
+	    <item name="android:colorAccent">@color/jukeapp_accent</item>
+	</style>
+
+	<style name="JukeAppToolbarTitleAppearance" parent="android:TextAppearance.Material.Widget.Toolbar.Title">
+		<item name="android:textColor">@color/white_primary</item>
+	</style>
+</resources>

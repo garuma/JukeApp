@@ -1,0 +1,8 @@
+*/bin/*
+*/obj/*
+google-play-services_lib/*
+google_play_services/*
+Components/*
+*.userprefs
+xamarin_libs/*
+packages/*

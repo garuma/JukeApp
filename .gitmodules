@@ -1,0 +1,3 @@
+[submodule "tangoandcache"]
+	path = tangoandcache
+	url = https://github.com/rdio/tangoandcache.git

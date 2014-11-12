@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:minHeight="72dp"
+    android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+    android:layout_height="wrap_content">
+    <rdio.tangoandcache.android.widget.ManagedImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/avatarImage"
+        android:layout_gravity="center"
+        android:layout_marginRight="8dp"
+        android:elevation="2dp" />
+    <TextView
+        android:text="Jeremie Laval"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:id="@+id/userName"
+        android:layout_weight="1"
+        android:lines="1"
+        android:layout_gravity="center"
+        android:textColor="@color/black_primary"
+        style="@android:style/TextAppearance.Material.Subhead" />
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/trackNumber"
+        android:lines="1"
+        android:textColor="@color/jukeapp_accent"
+        style="@android:style/TextAppearance.Material.Subhead"
+        android:drawableRight="@drawable/ic_track"
+        android:drawablePadding="2dp" />
+</LinearLayout>

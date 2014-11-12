@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:minHeight="?android:attr/actionBarSize"
+        android:background="?android:attr/colorPrimary"
+        android:contentInsetStart="16dp"
+        android:titleTextAppearance="@style/JukeAppToolbarTitleAppearance"
+        android:elevation="4dp" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/colorPrimary"
+        android:padding="48dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:elevation="4dp">
+        <ProgressBar
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/animated_bluetooth_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:id="@+id/participantsFrame"
+        android:layout_weight="1"
+        android:background="#efefef"
+        android:elevation="2dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="Participants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:minHeight="48dp"
+                android:gravity="center_vertical"
+                style="@android:style/TextAppearance.Material.Body2"
+                android:textColor="@color/black_secondary"
+                android:paddingStart="?android:attr/listPreferredItemPaddingLeft" />
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:id="@+id/userList" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/jukeapp_primary_less_dark"
+        android:id="@+id/playerFrame">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="16dp">
+            <ImageView
+                android:src="@color/loading_background"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:id="@+id/albumCover" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_gravity="center">
+                <TextView
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/songName"
+                    style="@android:style/TextAppearance.Material.Body2"
+                    android:textColor="@color/white_primary" />
+                <TextView
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/songArtist"
+                    style="@android:style/TextAppearance.Material.Body1"
+                    android:textColor="@color/white_secondary" />
+            </LinearLayout>
+            <jukeapp.CheckedImageButton
+                android:src="@drawable/ic_play_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/playPauseButton"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:layout_marginRight="16dp" />
+            <ImageButton
+                android:src="@drawable/ic_skip_next"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/skipNextButton"
+                android:background="?android:selectableItemBackgroundBorderless" />
+        </LinearLayout>
+        <rdio.tangoandcache.android.widget.ManagedImageView
+            android:elevation="10dp"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="left|bottom"
+            android:id="@+id/avatarIcon"
+            android:layout_marginLeft="34dp"
+            android:layout_marginBottom="2dp" />
+    </FrameLayout>
+</LinearLayout>

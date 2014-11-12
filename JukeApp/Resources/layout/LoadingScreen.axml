@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/containerFrame"
+    android:background="#03A9F4"
+    android:paddingTop="?android:attr/actionBarSize">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="?android:actionBarSize"
+        android:layout_marginTop="14dp">
+        <ImageView
+            android:src="@drawable/rdio_logo"
+            android:layout_width="132dp"
+            android:layout_height="132dp"
+            android:id="@+id/logoImage"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:elevation="4dp" />
+        <TextView
+            android:text="Signing in Rdio"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/explText"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/white_primary"
+            style="@android:style/TextAppearance.Material.Display1" />
+        <TextView
+            android:visibility="visible"
+            android:text="(this will take a while)"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/extraExpl"
+            android:gravity="center"
+            android:textColor="@color/white_secondary"
+            style="@android:style/TextAppearance.Material.Body1"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</FrameLayout>
