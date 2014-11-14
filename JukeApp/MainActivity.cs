@@ -62,7 +62,7 @@ namespace JukeApp
 				prefs.CurrentUserKey = currentUser.Key;
 
 				// Preps the playlist
-				query.Reset ();
+				/*query.Reset ();
 				rdioApi.ApiCall ("getPlaylists", new Hashtable (), query);
 				obj = await query.WaitForResultAsync ();
 				var stations = obj.GetJSONObject ("result").GetJSONArray ("owned");
@@ -75,7 +75,7 @@ namespace JukeApp
 						{ "playlist", station.GetString ("key") },
 					}, query);
 					await query.WaitForResultAsync ();
-				}
+				}*/
 
 				FragmentManager
 					.BeginTransaction ()
